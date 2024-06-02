@@ -1,0 +1,116 @@
+.SUFullContainer {
+  margin-top: -270px;
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  padding-right: 300px;
+
+}
+
+.SULeft {
+  /* background-color: aquamarine; */
+
+}
+
+.signUpBadge {
+  /* background-color: rgb(6, 58, 58); */
+  margin-left: 230px;
+  padding-top: 8%;
+}
+
+.SURight {
+  text-align: left;
+padding-top: 0px;
+  /* background-color: #913232; */
+  padding-left: 0px;
+  position: relative;
+
+  /* background-color: rgb(56, 14, 14); */
+  color: white;
+}
+
+.SUHeading {
+  margin-left: -100px;
+  padding-right: 0px;
+  height: 15px;
+  font-size: 45px;
+  font-weight: 700;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.SUSHeading {
+    margin-left: -100px;
+margin-top: 0px;
+  /* background-color: #d31f1f; */
+  font-size: 30px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.waitlistButtonSU {
+
+  background-color: red;
+  border-radius: 10px;
+}
+.waitlistButtonSU a {
+    margin-left: -100px;
+
+      margin-top: -20px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-inline: 20px;
+  border-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.waitlistButtonSU a:hover {
+  outline: 3px solid red;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 800px) {
+.SUFullContainer{
+  padding-top: 40px;
+  padding-right: 0px;
+}
+
+.SURight{
+  align-items: center;
+}
+.SUHeading{
+  margin-top: -10px;
+  margin-left: -5%;
+  font-size: 28px;
+}
+
+.SUSHeading{
+  margin-left: -10%;
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.waitlistButtonSU a{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  align-items: center;
+margin-left: 0px;
+}
+
+}

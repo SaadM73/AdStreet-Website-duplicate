@@ -1,0 +1,204 @@
+.FullContainer {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
+.FullContainer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 90%;
+  background: radial-gradient(
+    circle at 60% 50%,
+    #ffff00,
+    /* rgb(255, 106, 0),
+    rgb(158, 46, 46), */ rgb(211, 35, 35),
+    rgb(187, 42, 17),
+    rgb(105, 9, 9),
+    rgb(125, 7, 7),
+    rgb(125, 7, 7)
+  );
+  transform-origin: right;
+  transform: skewy(5deg);
+}
+
+.Left {
+  /* background-color: bisque; */
+
+  margin-right: 10%;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding-right: 175px;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: white;
+  z-index: 1;
+}
+
+.adbazarLogo {
+  margin-top: 40%;
+  margin-left: 20%;
+  margin-bottom: -20px;
+}
+
+
+
+
+.SubHeading {
+  font-size: 35px;
+  margin-bottom: -10px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.05, 0.9);
+}
+
+
+.Heading {
+  font-size: 55px;
+  margin-bottom: -30px;
+  transform-origin: left;
+  transform: scale(1.05, 0.9);
+}
+
+
+
+.Text1 {
+  margin-left: 100px;
+  align-items: flex-start; /* Align items to the start (top) of the container */
+  justify-content: flex-start; /* Align content to the start (left) of the container */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Align text to the left */
+
+  padding-top: 10%;
+}
+
+
+
+
+
+
+.heading {
+  margin-left: 20%;
+  font-size: 30px;
+  font-weight: 350;
+  height: 20px;
+
+  transform-origin: left;
+  transform: scale(1.25, 1);
+}
+
+.subheading {
+  margin-left: 20%;
+  font-size: 26px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 0.95);
+  /* background-color: rgb(100, 189, 189); */
+  margin-right: -80px;
+}
+
+.Right {
+  position: relative;
+  /* background-color: rgb(12, 144, 149); */
+  padding-right: 10%;
+  padding-left: 100px;
+}
+
+.iphone {
+  margin-top: 80px;
+  padding-left: 12%;
+}
+
+.star {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+
+.bell {
+  position: absolute;
+  top: 0px;
+  left: 380px;
+}
+
+.tick {
+  position: absolute;
+  top: 320px;
+  left: 0px;
+}
+
+.msg {
+  position: absolute;
+  top: 360px;
+  left: 370px;
+}
+
+.mail {
+  position: absolute;
+  top: 620px;
+  left: 0px;
+}
+
+.dart {
+  position: absolute;
+  top: 650px;
+  left: 300px;
+}
+
+@media (max-width: 800px) {
+  .FullContainer {
+    flex-direction: column;
+    align-items: center; /* Ensures all children are centered horizontally */
+  }
+
+  .Right{
+    /* background-color: #ffff00; */
+    padding: 0px  0px;
+
+  }
+  .iphone{
+    padding-left: 18%;
+  }
+
+  .Left {
+    /* background-color: #ffff00; */
+    width: 100%; /* Full width for better control */
+    padding: 0px 40px; /* Adds some padding on smaller screens */
+    /* display: flex; 
+    flex-direction: column; */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered */
+  }
+
+  .adbazarLogo,
+  .heading,
+  .subheading {
+    margin: 0; /* Removes any specific margins */
+    width: auto; /* Resets width settings to default */
+    align-items: center;
+  }
+
+  .adbazarLogo {
+    margin-top: 20px; /* Provides some top margin for spacing */
+  }
+
+  .heading {
+    padding-right: 80px;
+    font-size: 20px; /* Reduces font size for smaller screens */
+    margin-top: 20px; /* Adds margin to separate from logo */
+  }
+
+  .subheading {
+    padding-right: 10px;
+    font-size: 17px; /* Reduces font size for smaller screens */
+    margin-top: 20px; /* Adds margin to separate from heading */
+  }
+}

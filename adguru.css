@@ -1,0 +1,158 @@
+.FullContainer4 {
+  margin-top: -180px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 330px;
+  
+}
+
+.FullContainer4:before {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 300px;
+  background: radial-gradient(
+    circle at 72% 40%,
+    #828388,
+    #4F4E53,
+    #403F44,
+    #3B3A3F
+  );
+  transform-origin: left;
+  transform: skewy(-5deg);
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+.LeftAG{
+  margin-right: 10%;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding-right: 175px;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: white;
+  z-index: 1;
+}
+
+
+
+.headingAG{
+  margin-left: 20%;
+  font-size: 30px;
+  font-weight: 350;
+  height: 20px;
+  margin-right: -50px;
+
+  transform-origin: left;
+  transform: scale(1.25, 1);
+  z-index: 2;
+}
+
+.subheadingAG{
+  margin-left: 20%;
+  font-size: 26px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 0.95);
+  /* background-color: rgb(100, 189, 189); */
+  margin-right: -20px;
+}
+
+.RightAG{
+  position: relative;
+  /* background-color: rgb(12, 144, 149); */
+  padding-right: 10%;
+  padding-left: 100px;
+}
+
+.iphoneag {
+  margin-top: 2%;
+}
+
+.adguru {
+  margin-top: 45%;
+  margin-left: 20%;
+  margin-bottom: -2%;
+}
+
+.adguru1 {
+  position: absolute;
+  bottom: 93%;
+  left: 40%;
+}
+
+.adguru2 {
+  position: absolute;
+  bottom: 47%;
+  left: 10%;
+}
+
+.adguru3 {
+  position: absolute;
+  bottom: 36%;
+  left: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .FullContainer4 {
+    flex-direction: column;
+    align-items: center; /* Ensures all children are centered horizontally */
+  }
+
+  .RightAG{
+    /* background-color: #ffff00; */
+    padding: 0px  0px;
+
+  }
+
+  .LeftAG {
+    /* background-color: #ffff00; */
+    width: 100%; /* Full width for better control */
+    padding: 0px 40px; /* Adds some padding on smaller screens */
+    /* display: flex; 
+    
+
+    flex-direction: column; */
+
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered */
+  }
+
+  .adguru,
+  .headingAG,
+  .subheadingAG {
+    margin: 0; /* Removes any specific margins */
+    width: auto; /* Resets width settings to default */
+    align-items: center;
+  }
+
+  .adguru {
+    margin-top: 20px; /* Provides some top margin for spacing */
+  }
+
+  .headingAG {
+    padding-right: 80px;
+    font-size: 20px; /* Reduces font size for smaller screens */
+    margin-top: 20px; /* Adds margin to separate from logo */
+  }
+
+  .subheadingAG {
+    font-size: 17px; /* Reduces font size for smaller screens */
+    margin-top: 20px; 
+    margin-bottom: 100px;/* Adds margin to separate from heading */
+  }
+
+  .adguru2{
+    left: 0%;
+  }
+
+
+
+
+}

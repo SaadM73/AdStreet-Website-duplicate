@@ -1,0 +1,152 @@
+.FullContainer2 {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.FullContainer2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 300px;
+  background: radial-gradient(
+    circle at 72% 40%,
+    rgb(255, 255, 0),
+    rgb(240, 209, 4),
+    rgba(239, 196, 3, 0.803),
+    #ca8505
+  );
+  transform-origin: left;
+  transform: skewy(-5deg);
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+
+.headingab{
+  margin-right: -50px;
+    margin-left: 20%;
+  font-size: 30px;
+  font-weight: 350;
+  height: 20px;
+
+  transform-origin: left;
+  transform: scale(1.25, 1);
+}
+
+
+.subheadingab{
+    margin-left: 20%;
+  font-size: 26px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 0.95);
+  /* background-color: rgb(100, 189, 189); */
+  margin-right: -80px;
+}
+
+.iphone {
+  padding-right: 150px;
+  margin-top: 2%;
+}
+
+.adbooks {
+  margin-top: 45%;
+  margin-left: 20%;
+  margin-bottom: -2%;
+}
+
+.adbook1 {
+  position: absolute;
+  bottom: 90%;
+  left: 0;
+}
+
+.adbook2 {
+  position: absolute;
+  bottom: 33%;
+  left: -2%;
+}
+
+.adbook3 {
+  position: absolute;
+    bottom: 56%;
+    left:40%;
+
+}
+
+.adbook4 {
+  position: absolute;
+    bottom: 56%;
+    left:60%;
+
+}
+
+.adbook5 {
+  position: absolute;
+    bottom: 38%;
+    left:58%;
+
+}
+
+.adbook6 {
+  position: absolute;
+    bottom: 58%;
+    left:54%;
+
+}
+
+
+@media (max-width: 800px) {
+  .FullContainer2 {
+    flex-direction: column;
+    align-items: center; /* Ensures all children are centered horizontally */
+  }
+
+  .Right{
+    /* background-color: #ffff00; */
+    padding: 0px  0px;
+
+  }
+
+  .Left {
+    /* background-color: #ffff00; */
+    width: 100%; /* Full width for better control */
+    padding: 0px 40px; /* Adds some padding on smaller screens */
+    /* display: flex; 
+    flex-direction: column; */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered */
+  }
+
+  .adbooks,
+  .headingab,
+  .subheadingab {
+    margin: 0; /* Removes any specific margins */
+    width: auto; /* Resets width settings to default */
+    align-items: center;
+  }
+
+  .adbooks {
+    margin-top: 20px; /* Provides some top margin for spacing */
+  }
+
+  .headingab {
+    padding-right: 80px;
+    font-size: 20px; /* Reduces font size for smaller screens */
+    margin-top: 20px; /* Adds margin to separate from logo */
+  }
+
+  .subheadingab {
+    font-size: 17px; /* Reduces font size for smaller screens */
+    margin-top: 20px; /* Adds margin to separate from heading */
+  }
+
+  .adbook3,.adbook4,.adbook5,.adbook6{
+    margin-left: 10%;
+  }
+
+}

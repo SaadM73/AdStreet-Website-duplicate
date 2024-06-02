@@ -1,0 +1,136 @@
+.Welcome {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+}
+
+.LEFTW {
+  /* background-color: aquamarine; */
+  padding-left: 10%;
+  flex-direction: column; /* This should make it top to bottom */
+  padding-top: 10%;
+}
+
+.HeadingWE {
+  /* background-color: bisque; */
+  font-size: 55px;
+  margin-bottom: -30px;
+  transform-origin: left;
+  transform: scale(1.05, 0.9);
+}
+
+.SubHeadingWE {
+  /* background-color: blanchedalmond; */
+  font-size: 35px;
+  margin-bottom: -10px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.05, 0.9);
+}
+
+.headingText {
+  padding-right: 50px;
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1, 0.9);
+}
+.RedText {
+  color: red;
+}
+
+
+
+.waitlistButton {
+  background-color: red;
+  border-radius: 10px;
+}
+.waitlistButton a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-inline: 20px;
+  border-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.waitlistButton a:hover {
+  outline: 3px solid red;
+  background-color: white;
+  color: black;
+}
+
+.ImagesSlideShow {
+  display: absolute;
+  border-radius: 50px;
+  background-size: cover;
+  width: 340px;
+  height: 700px;
+  transition: ease-in-out;
+
+  z-index: 0;
+}
+
+.ImagesSlideShowContainer {
+  position: relative;
+}
+
+.ImagesSlideShow.transitioning {
+  opacity: 0;
+}
+
+.IphoneContainer {
+  /* background-color: #521a1a; */
+  margin-top: 50px;
+  padding-left: 4%;
+}
+
+.IphoneShell {
+  position: absolute;
+  z-index: 1;
+}
+
+
+@media (max-width: 800px) {
+  .Welcome {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+margin-bottom: -130px;
+  }
+  .HeadingWE{
+    font-size: 45px;
+    margin-left: -30px;
+  }
+
+  .SubHeadingWE{
+    font-size: 27px;
+    margin-left: -40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .headingText{
+    font-size: 20px;
+      padding-right: 0px;
+
+
+  }
+
+  .waitlistButton a{
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+  .IphoneShell{
+    margin-left: -175px;
+  }
+
+}

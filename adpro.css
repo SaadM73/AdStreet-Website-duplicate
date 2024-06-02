@@ -1,0 +1,186 @@
+.FullContainer5 {
+  margin-top: -190px;
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Add position relative */
+
+  margin-bottom: 150px;
+}
+
+.FullContainer5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 300px;
+
+  background: radial-gradient(
+    circle at 90% 85%,
+    #5b4749,
+    #6d4f57,
+    #2c2628,
+    #292325
+  );
+
+  transform-origin: right;
+  transform: skewy(5deg);
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+.Leftap {
+  margin-right: -100px;
+  /* background-color: azure; */
+  position: relative;
+  padding-right: 10%;
+  padding-left: 100px;
+  /* background-color: rgb(83, 43, 226); */
+}
+
+.adproIphone {
+  margin-top: 25px;
+  margin-left: 220px;
+}
+
+.Rightap {
+  margin-left: 150px;
+  /* background-color:aqua; */
+  padding-right: 200px;
+  margin-right: 150px;
+  color: white;
+  padding-left: 10%;
+  align-items: start;
+}
+
+.adprologo {
+  margin-top: 200px;
+  margin-left: -80px;
+  display: block;
+}
+
+.adapH {
+  margin-right: -200px;
+  margin-left: -80px;
+  /* background-color: rgb(7, 7, 77);8 */
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 350;
+  height: 0px;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.adapSH {
+  margin-top: 40px;
+  margin-left: -80px;
+  /* background-color: aquamarine; */
+  padding-right: 50px;
+  font-size: 26px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 0.95);
+  /* background-color: rgb(100, 189, 189); */
+  margin-right: -80px;
+}
+
+.adpro1 {
+  position: absolute;
+  top: -2%;
+  left: 40%;
+}
+
+.adpro2 {
+  position: absolute;
+  bottom: 91%;
+  left: 85%;
+}
+
+.adpro3 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+}
+
+.adpro4 {
+  position: absolute;
+  bottom: 55%;
+  left: 80%;
+}
+
+.adpro5 {
+  position: absolute;
+  bottom: 25%;
+  left: 80%;
+}
+
+.adpro6 {
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+
+@media (max-width: 800px) {
+  .FullContainer5 {
+    align-items: center;
+    padding: 0px 0px;
+  }
+
+  .Leftap {
+    align-items: center;
+  }
+
+  .adproIphone {
+    padding: 0px 0px;
+
+    margin-left: -20px;
+  }
+
+  .adprologo,
+  .adapH,
+  .adapSH {
+    align-items: center;
+    padding: 0px;
+  }
+
+  .adprologo {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .adapH {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  .adapSH {
+    align-content: center;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: -150px;
+
+    margin-bottom: 50px;
+  }
+
+  .adpro1,
+  .adpro3,
+  .adpro6 {
+    position: absolute; /* Remove absolute positioning */
+    margin-left: -140px; /* Center horizontally and add some vertical space */
+    width: auto; /* Adjust width as necessary */
+    max-width: 100%; /* Ensure they don't overflow their container */
+  }
+
+  .adpro2,
+  .adpro4,
+  .adpro5 {
+    position: absolute; /* Remove absolute positioning */
+    margin-left: -30px; /* Center horizontally and add some vertical space */
+    width: auto; /* Adjust width as necessary */
+    max-width: 100%; 
+  }
+}

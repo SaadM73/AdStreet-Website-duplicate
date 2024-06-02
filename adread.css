@@ -1,0 +1,72 @@
+.FullContainer6 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 330px;
+}
+
+.FullContainer6:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 300px;
+  background: radial-gradient(
+    circle at 72% 40%,
+    #c92a30,
+    #a92123,
+    #861214,
+    #410507
+  );
+  transform-origin: left;
+  transform: skewy(-5deg);
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+.iphoneag {
+  margin-top: 2%;
+}
+
+.adread {
+  margin-top: 45%;
+  margin-left: 20%;
+  margin-bottom: -2%;
+}
+
+.adread1 {
+  position: absolute;
+  bottom: 83%;
+  left: 9%;
+}
+
+.adread2 {
+  position: absolute;
+  bottom:25%;
+  left: 56%;
+}
+
+.adread3 {
+  position: absolute;
+  bottom: 5%;
+  left: -5%;
+}
+
+
+@media (max-width: 800px) {
+  .adread{
+    margin-top: 20%;
+    margin-left: 0%;
+  }
+
+  .adread2{
+    left:70%;
+  }
+
+  .adread3{
+    bottom: 0%;
+    left:0%;
+  }
+}

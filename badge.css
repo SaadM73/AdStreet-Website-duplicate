@@ -1,0 +1,80 @@
+.BadgeContainer {
+  margin-top: 150px;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.IconGrid {
+  padding-left: 15%; /* Maintain left padding for the icon on larger screens */
+}
+.NormText{
+  margin-top: -40px;
+}
+
+.TextGrid {
+  padding-top: 70px;
+  padding-left: 100px; /* Adjust text position */
+}
+
+.ScrollDown{
+  margin-left: -100px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 800px) {
+  .BadgeContainer {
+    align-items: center;
+  }
+  .IconGrid {
+    padding-left: 0; /* Remove padding for small screens */
+    order: 2; /* Icon comes second on small screens */
+  }
+  .TextGrid {
+    padding-top: 20px;
+    padding-left: 0; /* Remove left padding for small screens */
+    order: 1; /* Text comes first on small screens */
+  }
+  .Text {
+    text-align: center; /* Center-align text on small screens */
+  }
+  .BoldText {
+    text-align: center;
+  }
+
+  .NormText {
+    text-align: center;
+  }
+
+  .IconGrid {
+    padding-left: 22%;
+    align-items: center;
+  }
+  .ScrollDown {
+    margin-left: -5px;
+    padding-left: 0; /* Center scroll down icon on small screens */
+  }
+}
+
+.AdstreetIcon {
+}
+
+.AdstreetBadge {
+}
+
+.Text {
+  text-align: left; /* Default text alignment */
+}
+
+.BoldText {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.NormText {
+  font-size: 35px;
+  font-weight: 350;
+}
+
+.ScrollDown {
+  margin-top: -20px;
+  padding-left: 45%; /* Adjust the position of the scroll down icon */
+}

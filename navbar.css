@@ -1,0 +1,192 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  flex-wrap: nowrap; /* Prevent wrapping onto multiple lines */
+}
+
+.logo {
+  /* background-color: aqua; */
+  padding-top: 20px;
+  margin-left: 35%;
+  width: 300px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.navItems {
+  margin-left: 100px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-list {
+  /* background-color: blueviolet; */
+  padding-right: 20px;
+  margin-right: -50px;
+  margin-left: 20%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 20px;
+  /* background-color: rgb(43, 226, 198); */
+  /* background-color: rgb(87, 54, 117); */
+  height: 10px;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+  margin-left: 20px;
+}
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-item a:hover {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-item2 {
+  /* background-color: rgb(142, 98, 32); */
+  /* Set width to auto to allow the button to expand based on content */
+  font-family: Arial sans-serif;
+  margin-left: auto;
+  width: 300px;
+}
+.nav-item2 a {
+
+  margin-left: 30px;
+  width: 200px;
+  border-color: #fff;
+  font-size: 15px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-align: center; /* Center text horizontally */
+  line-height: 40px; /* Center text vertically */
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+}
+
+.nav-item2 a:hover {
+  outline: 3px solid rgb(255, 0, 0);
+  background-color: white;
+  color: black;
+}
+
+.social-media-list {
+  margin-left: -30px;
+  margin-right: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(44, 165, 42); */
+  height: 20px;
+  width: auto;
+  list-style-type: none;
+  display: flex;
+}
+
+.social-media-item {
+  justify-content: space-between;
+  /* background-color: chocolate; */
+  margin-left: 8px;
+}
+
+.social-media-logo {
+  width: 25px; /* Set minimum width */
+  height: 25px; /* Set minimum height */
+}
+
+.menuButton {
+  display: block;
+  background: #f0f0f0; /* Light grey background */
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Optional: rounds the corners of the button */
+}
+
+.hamburger {
+  margin-left: 400px;
+  margin-top: -60px;
+  width: 25px; /* Adjust width of the hamburger icon */
+  height: 20px; /* Adjust total height of the hamburger icon */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px; /* Height of each bar */
+  width: 100%; /* Width of each bar */
+  background-color: #333; /* Darker grey for the bars for better contrast */
+  border-radius: 5px; /* Rounded corners for each bar */
+  transition: all 0.3s ease-in-out;
+  transform-origin: top;
+}
+
+.menu {
+  .MuiPaper-root {
+    background-color: #000; /* Black background for the dropdown */
+    color: white; /* White text color */
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure it does not exceed 100% of the viewport width */
+    position: absolute; /* Position it absolutely within the navbar space */
+    left: 0;
+    top: 50px; /* Adjust this value based on your navbar's height */
+  }
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ccc; /* Lighter grey for hover effect */
+}
+
+@media (max-width: 800px) {
+  .menuButton {
+    display: block;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .navItems,
+  .nav-item2,
+  .social-media-list {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    position: absolute;
+    right: 0px;
+  }
+
+  .logo {
+    margin-left: 0px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    /* Aligns logo to the left and menu button to the right */
+  }
+}

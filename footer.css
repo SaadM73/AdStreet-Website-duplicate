@@ -1,0 +1,146 @@
+.FtContainer {
+  background-color: #252525;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.FLeft {
+  /* background-color: #a71e1e; */
+  color: white;
+  padding-left: 120px;
+  padding-top: 40px;
+}
+
+.footerBadge {
+  margin-left: -15px;
+  /* margin-right: 200px; */
+  transform: scale(0.9, 0.9);
+}
+.FH {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 650;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.FSH {
+  /* background-color: rgb(185, 121, 43); */
+  margin-right: -60px;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.FMiddle {
+  padding-left: 250px;
+  padding-top: 20px;
+  /* background-color: aqua; */
+  color: white;
+}
+
+.Quick {
+  font-size: 20px;
+  font-weight: 650;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+  margin-bottom: 0px;
+}
+
+.quicklist {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+  padding-top: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.quicklist li {
+  margin-bottom: 10px;
+}
+
+.quicklist li:hover {
+  color: red;
+  transition: 0.4s ease-in-out;
+}
+
+.FRight {
+  padding-top: 20px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 130px;
+  /* background-color: rgb(65, 149, 149); */
+  color: white;
+  margin-left: 0px;
+}
+
+.intouch {
+  font-size: 20px;
+  font-weight: 650;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+  margin-bottom: 0px;
+}
+
+.ads {
+  font-size: 17px;
+  font-weight: 400;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+}
+
+.social-media-logo2 {
+  width: 25px; /* Set minimum width */
+  height: 25px; /* Set minimum height */
+  filter: grayscale(0%) brightness(1000%);
+}
+
+@media (max-width: 800px) {
+  .FtContainer {
+    text-align: center; /* Center text for all items in the container */
+    display:flex;
+    flex-direction: column;
+  }
+
+  .FLeft{
+padding-left:0PX;
+  }
+
+
+  .FH{
+    margin-left: -50px;
+  }
+
+
+  .FSH{
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 60px;
+  }
+
+.FMiddle {
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 50px;
+
+}
+
+.Quick{
+  margin-bottom: 20px;
+}
+
+.FRight {
+  padding-top: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 40px;
+  /* background-color: rgb(65, 149, 149); */
+  color: white;
+  margin-left: 0px;
+}
+
+}
+

@@ -1,0 +1,168 @@
+.FullContainer3 {
+  /* background-color: aquamarine;*/
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Add position relative */
+  padding-bottom: 300px;
+}
+
+.FullContainer3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 30% 15%,
+    #d7effb,
+    #9cd4f5,
+    #54aede,
+    #5ebef0,
+    #3fb3ec
+  );
+  transform-origin: right;
+  transform: skewy(5deg);
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+.Left3 {
+  /* background-color: aqua; */
+  position: relative;
+  margin-right: -100px;
+  /* background-color: azure; */
+
+  padding-right: 10%;
+  padding-left: 100px;
+  /* background-color: rgb(83, 43, 226); */
+}
+
+.admeetIphone {
+  margin-top: 25px;
+  margin-left: 220px;
+}
+
+.Right3 {
+  margin-left: 150px;
+  /* background-color:aqua; */
+  padding-right: 200px;
+  margin-right: 150px;
+  color: white;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  padding-left: 10%;
+  align-items: start;
+}
+
+.admeetLogo {
+  margin-top: 300px;
+  margin-left: -80px;
+  display: block;
+}
+
+.admH {
+  margin-right: -200px;
+  margin-left: -80px;
+  /* background-color: rgb(7, 7, 77);8 */
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 350;
+  height: 0px;
+  transform-origin: left;
+  transform: scale(1.1, 1);
+  padding-right: 200px;
+}
+
+.admSH {
+  margin-top: 60px;
+  margin-left: -80px;
+  /* background-color: aquamarine; */
+  padding-top: 20px;
+  padding-right: 120px;
+  font-size: 26px;
+  font-weight: 350;
+  transform-origin: left;
+  transform: scale(1.1, 0.95);
+  /* background-color: rgb(100, 189, 189); */
+  margin-right: -190px;
+}
+
+.admeet1 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+}
+
+.admeet2 {
+  position: absolute;
+  bottom: 50%;
+  left: 70%;
+}
+.admeet3 {
+  position: absolute;
+  bottom: 65%;
+  left: 75%;
+}
+.admeet4 {
+  /* background-color: bisque; */
+  position: absolute;
+  bottom: 0%;
+  left: 70%;
+}
+
+@media (max-width: 800px) {
+  .FullContainer3 {
+    align-items: center;
+  }
+
+  .Left3 {
+    align-items: center;
+  }
+  .admeetIphone {
+    padding: 0px 0px;
+
+    margin-left: -20px;
+  }
+
+  .admeetLogo,
+  .admH,
+  .admSH {
+    align-items: center;
+    padding: 0px;
+  }
+
+  .admeetLogo {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  .admH {
+    align-items: center;
+    font-size: 20px;
+    margin-left: -15px;
+    margin-bottom: 50px;
+  }
+
+  .admSH {
+    margin-top: 0px;
+    font-size: 17px;
+    margin-left: -20px;
+    padding: 0px;
+  }
+
+  .admeet1,
+  .admeet2,
+  .admeet3,
+  .admeet4 {
+    position: absolute; /* Remove absolute positioning */
+    margin-left: -100px; /* Center horizontally and add some vertical space */
+  }
+
+
+  .admeet2,.admeet3{
+    margin-left: -60px;
+  }
+}
